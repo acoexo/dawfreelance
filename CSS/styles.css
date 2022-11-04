@@ -188,7 +188,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
-
 }
 .servicios h3{
     color:var(--secundario);
@@ -199,6 +198,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 input[type=text], select {
     width: 100%;
@@ -220,6 +220,19 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+@media (min-width: 780px) {
+    input[type=submit]{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
   
 input[type=submit]:hover {
     background-color:var(--primario);
