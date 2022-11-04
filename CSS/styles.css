@@ -7,28 +7,23 @@
     --grisClaro:#DFe9f3;
     --grisCTransp:#dfe9f3b4;
 }
-
 html {
     font-size: 62.5%;
 }
-
 h1,h2,h3{
     text-align: center;
 }
-
 body {
     font-size:16px; /* 1rem=10px */
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, var(--grisCTransp) 0%, var(--blanco) 100% );
 }
-
 .sombra{
     background-color: var(--blanco);
     box-shadow: 17px -3px 72px -24px rgba(0,0,0,0.75);
     padding:2rem;
     border-radius: 1rem;
 }
-
 .boton{
     color: var(--blanco);    
     background-color: var(--secundario);
@@ -49,7 +44,6 @@ body {
         width: auto;
     }
 }
-
 .boton:hover{
     color: var(--blanco);    
     background-color: var(--primario);
@@ -64,11 +58,9 @@ body {
     width: 80%;
     text-align: center;
 }
-
 .titulo {
     font-size: 2.8rem;
 }
-
 .titulo span {
     font-size: 2rem;
 }
@@ -78,11 +70,9 @@ body {
 .titulo2 span {
     font-size: 2rem;
 }
-
 .nav-bg {
     background-color: var(--secundario);  
 }
-
 .navegacion-principal {
     margin: 0px auto;
     display: flex;
@@ -97,7 +87,6 @@ body {
         justify-content: space-around;
     }   
 }
-
 .navegacion-principal a{
     font-weight: 700;
     font-size: 2rem;  
@@ -107,7 +96,6 @@ body {
     color: var(--blanco);  
 
 }
-
 .navegacion-principal a:hover{
     font-weight: 700;
     padding: 10px;   
@@ -115,18 +103,15 @@ body {
     color: var(--oscuro);
     background-color: var(--primario);
 }
-
 .contenedor{
     /*width:120;*/
     max-width:120rem;
     margin:0 auto;
 }
-
 .contenedor p{
     justify-content: center;
     text-align: center;
 }
-
 .contacto1{
     background-image: url(../IMG/hero.jpg);
     height: 450px;
@@ -135,7 +120,6 @@ body {
     position:relative;
     margin-bottom: 2rem;
 }
-
 .hero-content{
     background-color: rgba(0,0,0,0.6);
     width:100%;
@@ -146,12 +130,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .hero-content h2{
     font-size: 3rem;
     font-weight: 700;
 }
-
 .hero-content h2, 
 .hero-content p{
     color:var(--blanco);
@@ -209,7 +191,6 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-  
 input[type=submit] {
     width: 100%;
     background-color:var(--secundario);
@@ -232,12 +213,10 @@ input[type=submit] {
         flex-direction: column;
         align-items: center;
     }
- }
-  
+}
 input[type=submit]:hover {
     background-color:var(--primario);
 }
-  
 .form {
     border-radius: 5px;
     background-color: #dddddd;
