@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>CalcEntry.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+CalcEntry.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">CalcEntry{</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Scanner in = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s2">&quot;Este programa sirve para gestionar las entradas del campo de fútbol de Gran Canaria&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s3">/*Ignorar el while ya que es solo una implementación para la automatización para no tener que darle 
+        constantemente a la flechita de run*/</span>
+        <span class="s0">int </span><span class="s1">repetir = </span><span class="s4">1</span><span class="s0">;</span>
+        <span class="s0">while </span><span class="s1">(repetir == </span><span class="s4">1</span><span class="s1">) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;___________________________________&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;_______________________&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;|1 Naciente:         12€|&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;|2 Curva:            18€|&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;|3 Sur:              20€|&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;|4 Tribuna:          25€|&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;|5 Tribuna especial: 35€|&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;|6 VIP:              60€|&quot;</span><span class="s1">+</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">&quot;</span>
+                    <span class="s1">+</span><span class="s2">&quot;_______________________&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;                       &quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;(Por favor seleccione un número del 1 al 6 correspondiente a la posición en orden descendente)&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">System.out.print(</span><span class="s2">&quot;¿En qué lugar se va a posicionar?: &quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s0">int </span><span class="s1">lugar = in.nextInt()</span><span class="s0">;</span>
+            <span class="s0">if </span><span class="s1">(lugar&gt;</span><span class="s4">6</span><span class="s1">||lugar&lt;</span><span class="s4">1</span><span class="s1">){</span>
+                <span class="s1">System.out.println(</span><span class="s2">&quot;Esta zona no existe, por favor, introduce una zona válida&quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">}</span><span class="s0">else </span><span class="s1">{</span>
+                <span class="s1">System.out.print(</span><span class="s2">&quot;¿Cuantas entradas quiere?: &quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s0">int </span><span class="s1">quantity = in.nextInt()</span><span class="s0">;</span>
+                <span class="s0">int </span><span class="s1">total</span><span class="s0">;</span>
+                <span class="s0">switch </span><span class="s1">(lugar) {</span>
+                    <span class="s0">case </span><span class="s4">1</span><span class="s1">:</span>
+                        <span class="s1">total = (</span><span class="s4">12 </span><span class="s1">* quantity)</span><span class="s0">;</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Ha elegido la zona Naciente, precio: &quot; </span><span class="s1">+ total + </span><span class="s2">&quot; €&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                    <span class="s0">case </span><span class="s4">2</span><span class="s1">:</span>
+                        <span class="s1">total = (</span><span class="s4">18 </span><span class="s1">* quantity)</span><span class="s0">;</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Ha elegido la zona Curva, precio: &quot; </span><span class="s1">+ total + </span><span class="s2">&quot; €&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                    <span class="s0">case </span><span class="s4">3</span><span class="s1">:</span>
+                        <span class="s1">total = (</span><span class="s4">20 </span><span class="s1">* quantity)</span><span class="s0">;</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Ha elegido la zona Sur, precio: &quot; </span><span class="s1">+ total + </span><span class="s2">&quot; €&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                    <span class="s0">case </span><span class="s4">4</span><span class="s1">:</span>
+                        <span class="s1">total = (</span><span class="s4">25 </span><span class="s1">* quantity)</span><span class="s0">;</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Ha elegido la zona Tribuna, precio: &quot; </span><span class="s1">+ total + </span><span class="s2">&quot; €&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                    <span class="s0">case </span><span class="s4">5</span><span class="s1">:</span>
+                        <span class="s1">total = (</span><span class="s4">35 </span><span class="s1">* quantity)</span><span class="s0">;</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Ha elegido la zona Tribuna especial, precio: &quot; </span><span class="s1">+ total + </span><span class="s2">&quot; €&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                    <span class="s0">case </span><span class="s4">6</span><span class="s1">:</span>
+                        <span class="s1">total = (</span><span class="s4">60 </span><span class="s1">* quantity)</span><span class="s0">;</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Ha elegido la zona VIP, precio: &quot; </span><span class="s1">+ total + </span><span class="s2">&quot; €&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                        <span class="s0">break;</span>
+                <span class="s1">}</span>
+            <span class="s1">}</span>
+
+            <span class="s3">//Ignorar esto también</span>
+            <span class="s1">System.out.print(</span><span class="s2">&quot;¿Quieres repetir? introduce 1 si quieres o un 0 si no: &quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">repetir = in.nextInt()</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s3">//Y esto también</span>
+        <span class="s0">if </span><span class="s1">(repetir==</span><span class="s4">0</span><span class="s1">) {</span>
+            <span class="s1">System.out.print(</span><span class="s2">&quot;Adiós&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+<p class="s1">Si lees esto, aquí tienes el programa más complejo creado por mi en programación a día 7 de Noviembre de 2022</p>
+</body>
+</html>
